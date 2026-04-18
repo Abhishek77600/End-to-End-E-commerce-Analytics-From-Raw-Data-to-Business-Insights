@@ -1,63 +1,73 @@
-# End-to-End E-commerce Analytics: From Raw Data to Business Insights
+﻿# End-to-End E-commerce Analytics: From Raw Data to Business Insights
 
-This project demonstrates a complete e-commerce analytics pipeline using the Brazilian E-commerce Public Dataset by Olist. It covers data ingestion, cleaning, exploratory analysis, funnel analysis, customer segmentation, and business insights generation.
+This repository contains a full e-commerce analytics project built on the Brazilian Olist dataset. It includes data ingestion, cleaning, exploratory data analysis, funnel and cohort analysis, customer segmentation, revenue evaluation, and dashboard visualization.
+
+## Project overview
+
+This project provides:
+- KPI reporting for orders, revenue, profit, and delivery performance
+- Funnel analysis from order placement to delivery and review
+- Customer segmentation and retention analysis
+- Product, category, and geographic revenue insights
+- A Streamlit dashboard for interactive business exploration
 
 ## Dataset
-The project uses the Olist Brazilian E-commerce dataset, which includes:
-- 100k+ orders from 2016-2018
-- Customer and seller information
-- Product details and categories
-- Order reviews and payments
 
-## Project Structure
+The project uses the Olist Brazilian E-commerce dataset, which includes:
+- orders, customers, sellers, products, reviews, payments, and geolocation data
+- detailed order and delivery lifecycle information
+- product categories and translated metadata
+
+## Project structure
 
 - `data/raw/`: Raw CSV files from Olist dataset
 - `data/processed/`: Cleaned and merged data
 - `notebooks/`: Jupyter notebooks for analysis
 - `sql/`: SQL scripts for data exploration
-- `dashboard/`: Tableau dashboard files and screenshots
-- `insights/`: Executive summary and recommendations
+- `dashboard/`: Tableau workbook, Streamlit app, and screenshots
+- `insights/`: Business insights and recommendations
 - `docs/`: Methodology documentation
 
-## Getting Started
+## Key features
 
-1. **Install dependencies:**
+- Total revenue, order, and profitability analysis
+- Conversion funnel tracking for delivered and reviewed orders
+- Customer segmentation and cohort analytics
+- Delivery performance and rating impact analysis
+- Category and state-level revenue insights
+- Interactive filters via Streamlit dashboard
+
+## Getting started
+
+1. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run the analysis notebooks in order:**
-   - `01_EDA.ipynb`: Data loading, cleaning, and exploratory analysis
-   - `02_funnel_analysis.ipynb`: Funnel analysis, cohort analysis, and segmentation
-   - `03_customer_segmentation.ipynb`: Detailed customer segmentation with RFM analysis
+2. Run the notebooks in order:
+   - `notebooks/01_EDA.ipynb`
+   - `notebooks/02_funnel_analysis.ipynb`
+   - `notebooks/03_customer_segmentation.ipynb`
 
-3. **Run the live dashboard:**
-   - Install Streamlit: `pip install streamlit`
-   - Run: `streamlit run dashboard/streamlit_app.py`
+3. Run the dashboard:
+   ```bash
+   streamlit run dashboard/streamlit_app.py
+   ```
 
-4. **View results:**
-   - Processed data in `data/processed/`
-   - Business insights in `insights/recommendations.md`
+## Dashboard contents
 
-## Key Analyses
-
-- **Customer Segmentation**: K-means clustering on RFM (Recency, Frequency, Monetary) features
-- **Funnel Analysis**: Order journey from purchase to delivery
-- **Cohort Analysis**: Customer retention by acquisition cohorts
-- **Revenue Analysis**: Segment performance and trends
-
-## Technologies Used
-
-- Python (pandas, scikit-learn, matplotlib, seaborn)
-- Jupyter Notebooks
-- Tableau (for dashboard visualization)
-- Streamlit (for live dashboard exploration)
-
-## Dashboard
 - `dashboard/dashboard.twbx`: Tableau workbook
-- `dashboard/screenshots/`: dashboard preview images
-- `dashboard/streamlit_app.py`: live Streamlit dashboard using processed data
+- `dashboard/screenshots/`: Dashboard preview images
+- `dashboard/streamlit_app.py`: Streamlit dashboard using processed data
+
+## Technologies used
+
+- Python, pandas, NumPy
+- scikit-learn, matplotlib, seaborn
+- Jupyter Notebooks
+- Tableau
+- Streamlit
 
 ## Results
 
-The analysis identifies key customer segments, delivery performance metrics, and actionable business recommendations for improving conversion rates and customer retention.
+The analysis delivers actionable business recommendations for improving conversion rates, customer retention, and revenue performance by identifying top segments, delivery issues, and high-value categories.
