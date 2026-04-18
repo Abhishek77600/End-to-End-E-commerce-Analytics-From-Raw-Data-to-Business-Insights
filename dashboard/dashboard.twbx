@@ -1,0 +1,13 @@
+# Placeholder for Tableau Workbook
+
+This file should contain the Tableau workbook (.twbx) with the e-commerce analytics dashboard.
+
+To create this:
+1. Open Tableau Desktop
+2. Connect to the processed data in data/processed/
+3. Create visualizations for:
+   - Overview dashboard
+   - Funnel analysis
+   - Revenue segmentation
+4. Save as .twbx file
+5. Publish to Tableau Public and update the link in tableau_public_link.md
