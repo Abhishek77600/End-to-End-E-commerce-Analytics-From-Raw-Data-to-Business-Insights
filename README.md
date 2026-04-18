@@ -1,73 +1,156 @@
-﻿# End-to-End E-commerce Analytics: From Raw Data to Business Insights
+# 🛒 E-commerce Analytics Dashboard
 
-This repository contains a full e-commerce analytics project built on the Brazilian Olist dataset. It includes data ingestion, cleaning, exploratory data analysis, funnel and cohort analysis, customer segmentation, revenue evaluation, and dashboard visualization.
+## 📌 Overview
 
-## Project overview
+This project presents an interactive **E-commerce Analytics Dashboard** built using real-world Olist sales data. The dashboard provides actionable insights into revenue trends, customer behavior, delivery performance, and product profitability.
 
-This project provides:
-- KPI reporting for orders, revenue, profit, and delivery performance
-- Funnel analysis from order placement to delivery and review
-- Customer segmentation and retention analysis
-- Product, category, and geographic revenue insights
-- A Streamlit dashboard for interactive business exploration
+It is designed to simulate a **business intelligence tool** that helps stakeholders make data-driven decisions in an e-commerce environment.
 
-## Dataset
+---
 
-The project uses the Olist Brazilian E-commerce dataset, which includes:
-- orders, customers, sellers, products, reviews, payments, and geolocation data
-- detailed order and delivery lifecycle information
-- product categories and translated metadata
+## 🚀 Features
 
-## Project structure
+### 📊 Key Metrics (KPIs)
 
-- `data/raw/`: Raw CSV files from Olist dataset
-- `data/processed/`: Cleaned and merged data
-- `notebooks/`: Jupyter notebooks for analysis
-- `sql/`: SQL scripts for data exploration
-- `dashboard/`: Tableau workbook, Streamlit app, and screenshots
-- `insights/`: Business insights and recommendations
-- `docs/`: Methodology documentation
+* Total Orders
+* Total Revenue
+* Total Profit
+* Average Order Value (AOV)
+* Average Rating
+* Profit Margin (%)
+* Late Delivery Percentage
 
-## Key features
+---
 
-- Total revenue, order, and profitability analysis
-- Conversion funnel tracking for delivered and reviewed orders
-- Customer segmentation and cohort analytics
-- Delivery performance and rating impact analysis
-- Category and state-level revenue insights
-- Interactive filters via Streamlit dashboard
+### 🔍 Interactive Filters
 
-## Getting started
+* Order Date Range
+* Order Status (Delivered, Cancelled, Shipped, Returned)
+* Customer State
+* Product Category
 
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-2. Run the notebooks in order:
-   - `notebooks/01_EDA.ipynb`
-   - `notebooks/02_funnel_analysis.ipynb`
-   - `notebooks/03_customer_segmentation.ipynb`
+### 📈 Analytics & Visualizations
 
-3. Run the dashboard:
-   ```bash
-   streamlit run dashboard/streamlit_app.py
-   ```
+#### 1. Revenue & Orders Analysis
 
-## Dashboard contents
+* Monthly revenue trends
+* Order volume over time
 
-- `dashboard/dashboard.twbx`: Tableau workbook
-- `dashboard/screenshots/`: Dashboard preview images
-- `dashboard/streamlit_app.py`: Streamlit dashboard using processed data
+#### 2. Conversion Funnel
 
-## Technologies used
+* Orders → Delivered → Reviewed
+* Conversion and drop-off analysis
 
-- Python, pandas, NumPy
-- scikit-learn, matplotlib, seaborn
-- Jupyter Notebooks
-- Tableau
-- Streamlit
+#### 3. Profit Insights
 
-## Results
+* Profit by category
+* Profit by state
 
-The analysis delivers actionable business recommendations for improving conversion rates, customer retention, and revenue performance by identifying top segments, delivery issues, and high-value categories.
+#### 4. Delivery Performance
+
+* Average delivery time by state
+* Delivery time vs customer rating
+
+#### 5. Customer Segmentation
+
+* New vs Repeat customers
+
+#### 6. Product & Geographic Analysis
+
+* Top products by revenue
+* State vs category heatmap
+
+#### 7. Order Status Distribution
+
+* Breakdown of delivered, cancelled, returned, and shipped orders
+
+---
+
+## 💡 Business Insights
+
+* Identifies top-performing states and categories
+* Highlights revenue trends and growth patterns
+* Analyzes delivery efficiency and its impact on ratings
+* Helps optimize product and regional strategies
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Pandas, NumPy
+* Plotly (for interactive visualizations)
+* Streamlit (for dashboard deployment)
+
+---
+
+## 📂 Dataset
+
+* Source: Olist E-commerce Dataset
+* Preprocessed and cleaned for analysis
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Abhishek77600/End-to-End-E-commerce-Analytics-From-Raw-Data-to-Business-Insights.git
+
+# Navigate to the project folder
+cd ecommerce-analytics-dashboard
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+
+---
+
+## 📸 Screenshots
+
+<img width="1753" height="893" alt="image" src="https://github.com/user-attachments/assets/6a28303a-b5f7-434b-9b0e-8e0517024aae" />
+<img width="1587" height="755" alt="image" src="https://github.com/user-attachments/assets/29c35bcc-f17f-421c-b0c9-0956cdf61cd7" />
+<img width="1635" height="813" alt="image" src="https://github.com/user-attachments/assets/6fee14c1-50fb-4a76-92d5-24aabe0dc8e3" />
+<img width="1678" height="799" alt="image" src="https://github.com/user-attachments/assets/7ffa97fb-6c85-49b5-a9a4-7a52f50a84a2" />
+<img width="1687" height="825" alt="image" src="https://github.com/user-attachments/assets/d186b5b4-6d05-4290-8d62-e772f5815fca" />
+<img width="1687" height="735" alt="image" src="https://github.com/user-attachments/assets/3e3afac6-37db-4f4d-af57-1927055c5cd1" />
+
+
+
+
+
+
+
+---
+
+## ⚠️ Notes
+
+* Dataset is skewed towards delivered orders, which may influence distribution insights
+* Funnel metrics are derived from available cleaned data
+
+---
+
+## 🔮 Future Improvements
+
+* Machine Learning for sales prediction
+* Customer churn prediction
+* Real-time data integration
+* Advanced recommendation system
+
+---
+
+## 👨‍💻 Author
+
+**Abhishek Acharya**
+Data Analyst Aspirant
+
+---
+
+## ⭐ If you found this useful
+
+Give this repo a star ⭐ and feel free to contribute!
