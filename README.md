@@ -114,7 +114,17 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-(Add your dashboard screenshots here)
+<img width="1753" height="893" alt="image" src="https://github.com/user-attachments/assets/af4ea4ce-8dfc-4e54-9a4b-89ff22a1e59e" />
+<img width="1587" height="755" alt="image" src="https://github.com/user-attachments/assets/cc6df088-b6cd-4544-adce-55fc0e493dea" />
+<img width="1635" height="813" alt="image" src="https://github.com/user-attachments/assets/60d77eeb-5b1b-4a3a-a32a-591fda0b211b" />
+<img width="1635" height="804" alt="image" src="https://github.com/user-attachments/assets/8842c252-f596-4f0b-b0eb-fad39982b3fb" />
+<img width="1687" height="735" alt="image" src="https://github.com/user-attachments/assets/c998c5a2-a7bf-4c19-ad80-eae7c9791493" />
+
+
+
+
+
+
 
 ---
 
@@ -137,7 +147,7 @@ streamlit run app.py
 ## 👨‍💻 Author
 
 **Abhishek Acharya**
-Data Science Engineering Student
+Data Analyst Aspirant
 
 ---
 
